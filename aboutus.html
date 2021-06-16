@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Указывает кодировку символов для текущего HTML-документа -->
+    <meta charset="utf-8">
+    <!-- Указывает автора для текущего HTML-документа -->
+    <meta name="author" content="Артём Новиков">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>О нас</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/main.min.css">
+    <!-- Mmenu CSS -->
+    <link rel="stylesheet" href="./libs/mmenu/mmenu.css">
+    <!-- Footer -->
+    <link rel="import" href="./footer.html">
+</head>
+<body id="aboutus">
+
+    <div id="my-page">
+        <ul id="my-menu" class="menu-block">
+            <li class="menu-block__item">
+                <a href="index.html" class="menu-block__link active">Главная</a>
+            </li>
+            <li class="menu-block__item">
+                <a href="services.html" class="menu-block__link">Услуги</a>
+            </li>
+            <li class="menu-block__item">
+                <a href="our_work.html" class="menu-block__link">Пример работы</a>
+            </li>
+            <li class="menu-block__item">
+                <a href="aboutus.html" class="menu-block__link">О нас</a>
+            </li>
+            <li class="menu-block__item">
+                <a href="contacts.html" class="menu-block__link">Контакты</a>
+            </li>
+        </ul>
+        <nav id="navbar">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-4 col-md-4 col-6 d-flex">
+                        <a class="menu-button" href="#my-menu">
+                            <span class="menu-point"></span>
+                            <span class="mm">Меню</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-md-block d-none">
+                        <div class="logo-block">
+                            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo-image"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 d-flex justify-content-end align-items-center">
+                        <a href="tel:+375336160161" class="telephone-block">
+                            <span class="telephone">+375 (33) 616-01-61</span>
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="about-us pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="top col-lg-12">
+                        <h1 class="title"><b class="ititle">о нас</b></h1>
+                    </div>
+                    <div class="bottom col-lg-12">
+                        <div class="title-box">
+                            <h2 class="bottom-title">MDS в цифрах:</h2>
+                        </div>
+                        <div class="about-block row justify-content-center">
+                            <div class="about-box col-lg-4 text-center p-3">
+                                <i class="fas fa-car"></i>
+                                <p class="description">Опыт работы в сфере автоуслуг более 6-ти лет</p>
+                            </div>
+                            <div class="about-box col-lg-4 text-center p-3">
+                                <i class="fas fa-street-view"></i>
+                                <p class="description">Более 6000 облуженных автомобилей </p>
+                            </div>
+                            <div class="w-md-100"></div>
+                            <div class="about-box col-lg-4 text-center p-3">
+                                <i class="fas fa-users"></i>
+                                <p class="description">8-мь из 10-ти клиентов рекомендуют нас своим друзья и знакомым </p>
+                            </div>
+                            <div class="w-100 d-lg-block d-md-none"></div>
+                            <div class="about-box col-lg-4 text-center p-3">
+                                <i class="fas fa-briefcase"></i>
+                                <p class="description">За время работы мы 11 раз повышали квалификацию сотрудников в Беларуси и странах СНГ</p>
+                            </div>
+                            <div class="about-box col-lg-4 text-center p-3">
+                                <i class="fas fa-car-battery"></i>
+                                <p class="description">42 - именно столько брендов автохимии и поставщиков мы протестировали в ходе работы, и нашли идеальный вариант для каждого типа работ </p>
+                            </div>
+                            <div class="about-box col-lg-4 text-center p-3">
+                                <i class="fas fa-check-square"></i>
+                                <p class="description">Перед выдачей автомобиль проходит 3-ех уровневый контроль качества</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            var link = document.querySelector('link[rel=import]');
+            var content = link.import.querySelector('#footer');
+            document.body.appendChild(content.cloneNode(true));
+        </script>
+    </div>
+
+    <!-- jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Mmenu JS -->
+    <script src="./libs/mmenu/mmenu.js"></script>
+    <!-- Script JS -->
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>

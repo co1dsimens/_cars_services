@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Указывает кодировку символов для текущего HTML-документа -->
+    <meta charset="utf-8">
+    <!-- Указывает автора для текущего HTML-документа -->
+    <meta name="author" content="Артём Новиков">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Пример работы</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/main.min.css">
+    <!-- Mmenu CSS -->
+    <link rel="stylesheet" href="./libs/mmenu/mmenu.css">
+    <!-- Footer -->
+    <link rel="import" href="./footer.html">
+</head>
+<body id="catalog_h">
+    <div id="my-page">
+        <ul id="my-menu" class="menu-block">
+            <li class="menu-block__item">
+                <a href="index.html" class="menu-block__link active">Главная</a>
+            </li>
+            <li class="menu-block__item">
+                <a href="services.html" class="menu-block__link">Услуги</a>
+            </li>
+            <li class="menu-block__item">
+                <a href="our_work.html" class="menu-block__link">Пример работы</a>
+            </li>
+            <li class="menu-block__item">
+                <a href="aboutus.html" class="menu-block__link">О нас</a>
+            </li>
+            <li class="menu-block__item">
+                <a href="contacts.html" class="menu-block__link">Контакты</a>
+            </li>
+        </ul>
+        <nav id="navbar">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-lg-4 col-md-4 col-6 d-flex">
+                        <a class="menu-button" href="#my-menu">
+                            <span class="menu-point"></span>
+                            <span class="mm">Меню</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-md-block d-none">
+                        <div class="logo-block">
+                                <a href="index.html"><img src="img/logoWw.png" alt="logo" class="logo-image"></a>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 d-flex justify-content-end align-items-center">
+                        <a href="tel:+375336160161" class="telephone-block">
+                            <span class="telephone">+375 (33) 616-01-61</span>
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="portfolio py-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 p-0 ">
+                        <div  data-toggle="collapse" data-target="#collapseOne" class aria-expanded="true" style="background-image:url('img/name-1.png'); background-position-y: center; background-size: 100%;height: 150px " >
+                                <b class="title p-2" style="color:white;font-size:40px; border-bottom: 4px solid rgb(255, 208, 0)" >Полировка кузова</b>
+                        </div>
+                        <div id="collapseOne" class="collapse col-lg-12" >
+                            <div class="row justify-content-center p-2" style="border: 1px solid #757272;border-top: none; background:#eee">
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/polirowka/1.jpg" alt=""> <!-- src="small/polirovka/polirovka do1.jpg" -->
+                                    </div>
+                                </div>          
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/polirowka/2.jpg" alt=""> <!-- small/polirovka/polirovka posle1.jpg -->
+                                    </div>
+                                </div> 
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/polirowka/3.jpg" alt=""><!-- small/polirovka/polirovka do1.jpg -->
+                                    </div>
+                                </div>  
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/polirowka/4.jpg" alt=""> <!-- small/polirovka/polirovka posle1.jpg  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section> 
+        <section class="portfolio py-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 p-0 ">
+                        <div  data-toggle="collapse" data-target="#collapseTwo" class aria-expanded="true" style="background-image:url('img/assa.png'); background-position-y: center; background-size: 100%;height: 150px " >
+                                <b class="title p-2 " style="color:white;font-size:40px; border-bottom: 4px solid rgb(255, 208, 0)" >Химчистка салона</b>
+                        </div>
+                        <div id="collapseTwo" class="collapse  col-lg-12" >
+                            <div class="row justify-content-center p-2" style="border: 1px solid #757272;border-top: none; background:#eee">
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/himchistka/1.jpg" alt=""><!-- small/himhistka/him do1.jpg -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/himchistka/2.jpg" alt="">  <!-- small/himhistka/him do2.jpg -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/himchistka/3.jpg" alt="">    <!-- small/himhistka/him posle1.jpg -->
+                                    </div>
+                                </div>  
+                                 <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/himchistka/4.jpg" alt="">   <!-- small/himhistka/him posle2.jpg -->
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section> 
+        <section class="portfolio py-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 p-0 ">
+                        <div  data-toggle="collapse" data-target="#collapseThree" class aria-expanded="true" style="background-image:url('img/name-3.jpg'); background-position-y: center; background-size: 100%;height: 150px " >
+                                <b class="title p-2 " style="color:white;font-size:40px; border-bottom: 4px solid rgb(255, 208, 0)" >Антигравийная пленка</b>
+                        </div>
+                        <div id="collapseThree" class="collapse  col-lg-12" >
+                            <div class="row justify-content-center p-2" style="border: 1px solid #757272;border-top: none; background:#eee">
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/antigrawiynaya/1.jpg" alt=""> <!-- small/plenka shunam vhalyshayda onkiler gerek dal/C6kPnLP8z-g.jpg -->
+                                    </div>
+                                </div>  
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/antigrawiynaya/2.jpg" alt=""> <!-- small/plenka shunam vhalyshayda onkiler gerek dal/MoJpahvOf7Q.jpg -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/antigrawiynaya/3.jpg" alt=""> <!-- small/plenka shunam vhalyshayda onkiler gerek dal/Qhl_AMe5oaI.jpg -->
+                                    </div>
+                                </div>  
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/antigrawiynaya/4.jpg" alt=""> <!-- small/plenka shunam vhalyshayda onkiler gerek dal/mg6lQAk4a9s.jpg -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section> 
+        <section class="portfolio py-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 p-0 ">
+                        <div  data-toggle="collapse" data-target="#collapseFour" class aria-expanded="true" style="background-image:url('img/name-2.jpg'); background-position-y: center; background-size: 100%;height: 150px " >
+                                <b class="title p-2 " style="color:white;font-size:40px; border-bottom: 4px solid rgb(255, 208, 0)" >Защитные покрытия на кузов </b>
+                        </div>
+                        <div id="collapseFour" class="collapse  col-lg-12" >
+                            <div class="row justify-content-center p-2" style="border: 1px solid #757272;border-top: none; background:#eee">
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/zashitnyye-pokrytiya/1.jpg" alt="">  <!-- small/zashita pokrytiya kuzov/M8Q1kBT-EJA.jpg -->
+                                    </div>
+                                </div>   
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/zashitnyye-pokrytiya/2.jpg" alt=""> <!-- small/zashita pokrytiya kuzov/O16uKrZ8iR8.jpg -->
+                                    </div>
+                                </div>  
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/zashitnyye-pokrytiya/3.jpg" alt="">  <!-- small/zashita pokrytiya kuzov/VFRGyzC75Kk.jpg -->
+                                    </div>
+                                </div>  
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/zashitnyye-pokrytiya/4.jpg" alt=""><!-- small/zashita pokrytiya kuzov/jScHmmVfBxA.jpg  -->
+                                    </div>
+                                </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section> 
+        <section class="portfolio py-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 p-0 ">
+                        <div  data-toggle="collapse" data-target="#collapseFive" class aria-expanded="true" style="background-image:url('img/name-6.jpg'); background-position-y: center; background-size: 100%;height: 150px " >
+                                <b class="title p-2 " style="color:white;font-size:40px; border-bottom: 4px solid rgb(255, 208, 0)" >Шумоизоляция</b>
+                        </div>
+                        <div id="collapseFive" class="collapse  col-lg-12" >
+                            <div class="row justify-content-center p-2" style="border: 1px solid #757272;border-top: none; background:#eee">
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/shumoizolyasiya/1.jpg" alt=""> <!-- small/shumozalyasia shuny vhalyshayda onkide suratda saydyn ady durdy/shumozalyasiado1.jpg -->
+                                    </div>
+                                </div>     
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/shumoizolyasiya/2.jpg" alt=""> <!-- small/shumozalyasia shuny vhalyshayda onkide suratda saydyn ady durdy/shumozalyasiado2.jpg -->
+                                    </div>
+                                </div>      
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/shumoizolyasiya/3.jpg" alt=""> <!-- small/shumozalyasia shuny vhalyshayda onkide suratda saydyn ady durdy/shumozalyasiaposle1.jpg -->
+                                    </div>
+                                </div>     
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/shumoizolyasiya/4.jpg" alt="">    <!-- small/shumozalyasia shuny vhalyshayda onkide suratda saydyn ady durdy/shumozalyasiaposle2.jpg -->
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section> 
+        <section class="portfolio py-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 p-0 ">
+                        <div  data-toggle="collapse" data-target="#collapseSix" class aria-expanded="true" style="background-image:url('img/name-5.jpg'); background-position-y: center; background-size: 100%;height: 150px " >
+                                <b class="title p-2 " style="color:white;font-size:40px; border-bottom: 4px solid rgb(255, 208, 0)" >Ремонт салона</b>
+                        </div>
+                        <div id="collapseSix" class="collapse  col-lg-12" >
+                            <div class="row justify-content-center p-2" style="border: 1px solid #757272;border-top: none; background:#eee">
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/remont-salona/1.jpg" alt="">   <!-- small/remont salona/remont salonado1.jpg -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/remont-salona/2.jpg" alt="">  <!-- small/remont salona/remont salonado2.jpg -->
+                                    </div>
+                                </div>    
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/remont-salona/3.jpg" alt=""> <!-- small/remont salona/remont salonaposle1.jpg -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/remont-salona/4.jpg" alt=""> <!-- small/remont salona/remont salonaposle2.jpg  -->
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section> 
+        <section class="portfolio py-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 p-0 ">
+                        <div  data-toggle="collapse" data-target="#collapseSeven" class aria-expanded="true" style="background-image:url('img/name-4.jpg'); background-position-y: center; background-size: 100%;height: 150px " >
+                                <b class="title p-2 " style="color:white;font-size:40px; border-bottom: 4px solid rgb(255, 208, 0)" >Предпродажая подготовка</b>
+                        </div>
+                        <div id="collapseSeven" class="collapse  col-lg-12" >
+                            <div class="row justify-content-center p-2" style="border: 1px solid #757272;border-top: none; background:#eee">
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/dop-uslugi/1.jpg" alt="">  <!-- small/predprodajnye podgotovka/predprodajado1.jpg -->
+                                    </div>
+                                </div>  
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/dop-uslugi/2.jpg" alt=""> <!-- small/predprodajnye podgotovka/predprodajado2.jpg -->
+                                    </div>
+                                </div> 
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/dop-uslugi/3.jpg" alt=""> <!-- small/predprodajnye podgotovka/predprodajaposle1.jpg -->
+                                    </div>
+                                </div>  
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/dop-uslugi/4.jpg" alt="">  <!-- small/predprodajnye podgotovka/predprodajaposle2.jpg -->
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section> 
+        <section class="portfolio py-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 p-0 ">
+                        <div  data-toggle="collapse" data-target="#collapseEight" class aria-expanded="true" style="background-image:url('img/name-7.jpg'); background-position-y: center; background-size: 100%;height: 150px " >
+                                <b class="title p-2 " style="color:white;font-size:40px; border-bottom: 4px solid rgb(255, 208, 0)" >Тонировка</b>
+                        </div>
+                        <div id="collapseEight" class="collapse  col-lg-12" >
+                            <div class="row justify-content-center p-2" style="border: 1px solid #757272;border-top: none; background:#eee">
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/tonirowka/1.jpg" alt=""> <!-- small/tonirovka/-C71gGTHt2s.jpg -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/tonirowka/2.jpg" alt=""> <!-- small/tonirovka/RMTufAI97S0.jpg -->
+                                    </div>
+                                </div> 
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/tonirowka/3.jpg" alt=""> <!-- small/tonirovka/_z0VB5kKzAM.jpg -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-8 py-2">
+                                    <div class="img-block">
+                                        <img src="new_img/tonirowka/4.jpg" alt=""> <!-- small/tonirovka/c7I0hgc3B78.jpg -->
+                                    </div>
+                                </div>         
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section>            
+
+        <script>
+            var link = document.querySelector('link[rel=import]');
+            var content = link.import.querySelector('#footer');
+            document.body.appendChild(content.cloneNode(true));
+        </script>
+    </div>
+
+        <!-- jQuery JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Mmenu JS -->
+        <script src="./libs/mmenu/mmenu.js"></script>
+        <!-- Script JS -->
+        <script src="./js/scripts.js"></script>
+</body>
