@@ -1,0 +1,832 @@
+@import "libs"
+@import "fonts"
+
+body
+    font-family: "OpenSans Regular"
+    font-size: 16px
+    color: #fff
+
+.logo-image-header
+    display: block
+    width: 600px
+    margin: auto
+.logo-image
+    display: block
+    width: 300px
+    margin: auto
+
+#my-menu
+    z-index: 9999
+
+/* menu */
+.menu-block__link
+    display: block
+    text-align: left
+    font-size: 18px
+    list-style: none
+    margin: 10px 15px
+    padding: 25px
+    border-radius: 5px
+    transition-duration: .2s
+    &:hover
+        background: #f6b91d
+        font-size: 20px
+        padding-left: 50px
+        box-shadow: 1px 1px 1px 1px rgba(17, 17, 17, 0.50)
+        &::after
+            opacity: 1
+            right: -15px
+    &::after
+        content: '\00bb'
+        position: relative
+        opacity: 0
+        top: 0
+        right: 0
+        transition: 0.5s
+        color: #fff
+
+#index
+    /* nav */
+    nav
+        z-index: 1
+        position: absolute
+        width: 100%
+        .menu-button
+            display: flex
+            align-items: center
+            color: #f6b91d
+            text-decoration: none
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 2px
+        .menu-point
+            display: block
+            position: relative
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::before
+            content: ""
+            display: block
+            position: absolute
+            top: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .telephone-block
+            color: #fff
+            text-decoration: none
+            .telephone
+                margin-right: 15px
+                color: #f6b91d
+            i
+                color: #f6b91d
+
+    /* header */
+    header
+        position: relative
+        height: 100vh
+        background: #fff
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-align: center
+        overflow: hidden
+        #myVideo
+            position: absolute
+            width: 135%
+            bottom: -135px
+            z-index: -1
+        .title
+            font-family: "Formular-Light"
+            font-size: 45px
+            font-weight: 300
+            line-height: 65px
+            width: 72%
+            margin: auto
+            b
+                color: #f6b91d
+
+    /* services */
+    .services
+        .top
+            .title
+                color: #f6b91d
+        .bottom
+            align-items: left
+        .services-box__img
+            width: 100%
+            height: 400px
+        .services-box__block
+            width: 100%
+            height: 290px
+            background-color: #bdb9b9
+        .services-box
+            display: block
+            position: relative
+            max-width: 530px
+            margin: 20px
+            overflow: hidden
+        
+            &:hover .services-box__script
+                background: rgba(0, 0, 0, 0.9)
+            &::before
+                content: ""
+                display: block
+                font-size: 50px
+                position: absolute
+                min-height: 150%
+                min-width: 70%
+                top: -120px
+                left: -70px
+                background: rgba(0, 0, 0, 0.9)
+                transition-duration: 0.3s
+                transition-timing-function: ease-in
+            &::after
+                content: ""
+                position: absolute
+                min-height: 150%
+                min-width: 40%
+                top: -90px
+                right: -100%
+                background: rgba(0, 0, 0, 0.9)
+                transition-duration: 0.2s
+                transition-timing-function: ease-in
+            &:hover::before
+                margin-left: -100%
+            &:hover::after
+                right: -25px
+            &__script
+                position: absolute
+                top: 20%
+                left: 0
+                color: #fff
+                width: 80%
+                padding: 30px
+                transition-duration: 0.3s
+                transition-timing-function: ease-in
+                &::before
+                    content: ""
+                    width: 100px
+                    height: 4px
+                    background: #f6b91d
+                    position: absolute
+                    border-radius: 5px
+                    left: 42px
+                    bottom: 0
+                    transition-duration: 0.3s
+                    transition-timing-function: ease-in
+            &__nav
+                font-size: 18px
+                position: absolute
+                right: -80px
+                bottom: 20px
+                color: #fff
+                padding-bottom: 20px
+                transition-duration: 0.3s
+                transition-timing-function: ease-in
+                z-index: 2
+                &::before
+                    content: ""
+                    width: 0
+                    height: 4px
+                    background: #f6b91d
+                    position: absolute
+                    border-radius: 5px
+                    right: -55px
+                    bottom: 0
+                    transition-duration: 0.3s
+                    transition-timing-function: ease-in
+            &:hover .services-box__nav
+                right: 70px
+            &:hover .services-box__nav::before
+                width: 200px    
+            &:hover .services-box__script::before
+                width: 0
+            &__title, .services-box__description
+                margin: 10px
+            &__title  
+                text-transform: uppercase
+            &__description
+                letter-spacing: 1px
+            
+
+/* contacts */
+.contacts .title
+    color: #f6b91d
+ymaps
+    z-index: 9999
+    margin-top: 30px
+
+/* footer */
+footer
+    background-color: #292929
+    .social-block
+        display: block
+        width: 24px
+        height: 24px
+    .social-list__item, .adres-list__item
+        list-style: none
+    .social-list__link, .adres-list__link
+        color: #f6b91d
+        text-decoration: none
+        width: 80%
+        margin: auto
+
+/* CATALOG H */
+
+#catalog_h
+    .img-block 
+        max-width: 250px
+        max-height: 160px
+        overflow: hidden
+        box-shadow: 3px 5px 5px gray
+        img
+            display: block
+            width: 100%
+    /* nav */
+    nav
+        box-shadow: 0 2px 4px 0 #D8D8D8
+        .menu-button
+            display: flex
+            align-items: center
+            color: #f6b91d
+            text-decoration: none
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 2px
+        .menu-point
+            display: block
+            position: relative
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::before
+            content: ""
+            display: block
+            position: absolute
+            top: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .telephone-block
+            color: #fff
+            text-decoration: none
+            .telephone
+                margin-right: 15px
+                color: #f6b91d
+            i
+                color: #f6b91d
+
+    /* catalog */
+    .catalog-block
+        display: flex
+        text-align: center
+        justify-content: center
+        padding: 0
+    .catalog-block-2
+        display: flex
+        text-align: center
+        justify-content: center
+        padding: 0
+        margin: 0
+    .catalog-box
+        text-align: center
+        margin: 10px
+        padding: 15px
+        max-width: 260px
+        margin: 20px 60px
+        position: relative
+    .catalog-box::after
+        content: ""
+        width: 0
+        height: 0
+        top: 45%
+        bottom: 0
+        width: 55px
+        height: 55px
+        position: absolute
+        z-index: -1
+        left: 45%
+        transition: 0.3s
+        transition-duration: ease-in
+    .catalog-box:hover::after
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: #f6b91d
+    .catalog-box:hover .box_description
+        color: #fff
+    .box_description
+        font-size: 26px
+        color: #000
+        margin: 20px 0
+        transition: 0.3s
+    .catalog-box__image-box
+        width: 230px
+        height: 202px
+        display: flex
+        align-items: center
+    img.catalog-box__img
+        max-width: 100%
+        display: block
+        margin: auto
+    .catalog-box__buttom
+        text-decoration: none
+        height: 45px
+        padding: 10px 15px
+        display: inline-block
+        font-size: 16px
+        text-transform: uppercase
+        line-height: 24px
+        font-weight: 400
+        border-radius: 5px
+        letter-spacing: 1px
+        justify-content: end
+        transition: 0.3s
+        transition-duration: ease-in
+        background-color: #f6b91d
+        color: #000
+        position: relative
+        overflow: hidden
+        z-index: 1
+    .catalog-box:hover .catalog-box__buttom
+        background: #fff
+    .catalog-box__buttom::after
+        content: ""
+        -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0 0)
+        clip-path: polygon(0 0, 100% 0, 0 0, 0 0)
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        transition: 0.3s
+        transition-duration: ease-in
+    .catalog-box__buttom:hover::after
+        width: 100%
+        height: 100%
+        z-index: -1
+        border-left: 1px solid #18eb46
+        border-right: 1px solid #18eb46
+        background: #18eb46
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+        cursor: pointer
+    .catalog-box__buttom:hover
+        color: #fff
+        cursor: pointer
+
+/* CONTACTS */
+#contacts
+    .social-img
+        display: block
+        overflow: hidden
+        width: 58px
+        height: 58px
+        img
+            width: 100%
+    /* nav */
+    nav
+        box-shadow: 0 2px 4px 0 #D8D8D8
+        .menu-button
+            display: flex
+            align-items: center
+            color: #f6b91d
+            text-decoration: none
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 2px
+        .menu-point
+            display: block
+            position: relative
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::before
+            content: ""
+            display: block
+            position: absolute
+            top: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .telephone-block
+            color: #fff
+            text-decoration: none
+            .telephone
+                margin-right: 15px
+                color: #f6b91d
+            i
+                color: #f6b91d
+    /* contacts-box */
+    .contacts-box_description
+        display: inline-block
+        color: #9B9B9B
+        font-size: 24px
+        font-weight: 300
+        line-height: 30px
+        width: 330px
+    .contacts-box_number
+        display: inline-block
+        color: #000
+        font-weight: 100
+        text-decoration: none
+        font-size: 24px
+        width: 250px
+        transition: 0.3s
+        transition-duration: ease-in
+    .contacts-box_number:hover
+        color: #F6B91D
+    .contacts .title
+        font-weight: 100
+        font-size: 36px
+        text-align: center
+        margin: 0 0 20px 0
+        color: #000
+    .contacts .ititle
+        color: #F6B91D
+    .map-description
+        text-align: center
+    .map-title
+        font-weight: 100
+        font-size: 36px
+        margin: 0 0 20px 0
+        color: #000
+    .map_ititle
+        color: #F6B91D
+        font-size: 36px
+    .contacts-box_nav
+        display: inline-block
+        color: #9B9B9B
+        font-size: 20px
+        font-weight: 300
+        line-height: 30px
+        width: 295px
+        text-align: left
+        transition: 0.3s
+        transition-duration: ease-in
+    .contacts-box_nav:hover
+        color: #F6B91D
+    .contacts-box_button
+        text-decoration: none
+        height: 45px
+        padding: 15px 30px
+        font-size: 13px
+        background-color: #9B9B9B
+        line-height: 45px
+        font-weight: 400
+        text-align: center
+        color: #fff
+        letter-spacing: 1px
+        transition: 0.3s
+        transition-duration: ease-in
+        cursor: pointer
+    .contacts-box_button:hover
+        background-color: #f6b91d
+        color: #000
+        cursor: pointer
+    .box_string
+        display: block
+        margin: 50px auto
+        align-content: center
+    .contacts-box
+        margin: 0 0 50px
+    .string-box
+        display: inline-block
+        text-align: left
+        max-width: 344px
+
+/* ABOUT US */
+
+#aboutus
+    /* nav */
+    nav
+        box-shadow: 0 2px 4px 0 #D8D8D8
+        .menu-button
+            display: flex
+            align-items: center
+            color: #f6b91d
+            text-decoration: none
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 2px
+        .menu-point
+            display: block
+            position: relative
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::before
+            content: ""
+            display: block
+            position: absolute
+            top: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .telephone-block
+            color: #fff
+            text-decoration: none
+            .telephone
+                margin-right: 15px
+                color: #f6b91d
+            i
+                color: #f6b91d
+                
+    .title
+        color: #f6b91d
+        text-transform: uppercase
+        text-align: center
+    .about-block
+        .bottom-title
+            color: #111
+            text-align: center
+        .about-box
+            font-size: 18px
+            color: #111111
+            width: 250px   
+            padding: 0 0 10px
+            max-width: 260px
+            .fas
+                font-size: 52px
+                color:#f6b91d
+                padding: 0 0 10px
+
+/* PRICE-LIST */
+#price-list
+    .item
+        max-width: 225px
+        max-height: 120px
+    /* nav */
+    nav
+        box-shadow: 0 2px 4px 0 #D8D8D8
+        .menu-button
+            display: flex
+            align-items: center
+            color: #f6b91d
+            text-decoration: none
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 2px
+        .menu-point
+            display: block
+            position: relative
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::before
+            content: ""
+            display: block
+            position: absolute
+            top: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .telephone-block
+            color: #fff
+            text-decoration: none
+            .telephone
+                margin-right: 15px
+                color: #f6b91d
+            i
+                color: #f6b91d
+    .top
+        color: #111111
+        text-align: center
+        .after-title
+            text-transform: uppercase 
+            border-bottom: 2px solid #f6b91d
+            padding: 20px
+    .table-block  
+        width: 100%
+        font-size: 18px
+        color: #111
+        .table-string
+            transition: 0.3s
+            .table-box
+                width: 91%
+                position: relative
+                padding: 20px 10px
+            .box-title
+                display: inline-block
+                font-size: 22px
+            .table-description
+                width: 100%
+                display: inline-block
+                font-size: 20px
+                margin: auto
+        .table-string:hover
+            background: #f6b91d
+            cursor: pointer
+        .collapse
+            background: #fff
+            &:active .plus
+                display: none
+/* SERVICES */
+
+#services
+    /* nav */
+    nav
+        box-shadow: 0 2px 4px 0 #D8D8D8
+        .menu-button
+            display: flex
+            align-items: center
+            color: #f6b91d
+            text-decoration: none
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 2px
+        .menu-point
+            display: block
+            position: relative
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::before
+            content: ""
+            display: block
+            position: absolute
+            top: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .menu-point::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: 8px
+            width: 36px
+            height: 2px
+            margin-right: 18px
+            background-color: #f6b91d
+        .telephone-block
+            color: #fff
+            text-decoration: none
+            .telephone
+                margin-right: 15px
+                color: #f6b91d
+            i
+                color: #f6b91d
+    /* services */
+    .services
+        .top
+            .title
+                color: #f6b91d
+        .bottom
+            align-items: left
+        .services-box__img
+            width: 100%
+            height: 400px
+        .services-box__block
+            width: 100%
+            height: 290px
+            background-color: #bdb9b9
+        .services-box
+            display: block
+            position: relative
+            max-width: 530px
+            margin: 20px
+            overflow: hidden
+        
+            &:hover .services-box__script
+                background: rgba(0, 0, 0, 0.9)
+            &::before
+                content: ""
+                display: block
+                font-size: 50px
+                position: absolute
+                min-height: 150%
+                min-width: 70%
+                top: -120px
+                left: -70px
+                background: rgba(0, 0, 0, 0.9)
+                transition-duration: 0.3s
+                transition-timing-function: ease-in
+            &::after
+                content: ""
+                position: absolute
+                min-height: 150%
+                min-width: 40%
+                top: -90px
+                right: -100%
+                background: rgba(0, 0, 0, 0.9)
+                transition-duration: 0.2s
+                transition-timing-function: ease-in
+            &:hover::before
+                margin-left: -100%
+            &:hover::after
+                right: -25px
+            &__script
+                position: absolute
+                top: 20%
+                left: 0
+                color: #fff
+                width: 80%
+                padding: 30px
+                transition-duration: 0.3s
+                transition-timing-function: ease-in
+                &::before
+                    content: ""
+                    width: 100px
+                    height: 4px
+                    background: #f6b91d
+                    position: absolute
+                    border-radius: 5px
+                    left: 42px
+                    bottom: 0
+                    transition-duration: 0.3s
+                    transition-timing-function: ease-in
+            &__nav
+                font-size: 18px
+                position: absolute
+                right: -80px
+                bottom: 20px
+                color: #fff
+                padding-bottom: 20px
+                transition-duration: 0.3s
+                transition-timing-function: ease-in
+                z-index: 2
+                &::before
+                    content: ""
+                    width: 0
+                    height: 4px
+                    background: #f6b91d
+                    position: absolute
+                    border-radius: 5px
+                    right: -55px
+                    bottom: 0
+                    transition-duration: 0.3s
+                    transition-timing-function: ease-in
+            &:hover .services-box__nav
+                right: 70px
+            &:hover .services-box__nav::before
+                width: 200px    
+            &:hover .services-box__script::before
+                width: 0
+            &__title, .services-box__description
+                margin: 10px
+            &__title  
+                text-transform: uppercase
+            &__description
+                letter-spacing: 1px
+
+@import "media"
